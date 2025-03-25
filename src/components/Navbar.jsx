@@ -1,35 +1,54 @@
 import React from 'react'
+import 'remixicon/fonts/remixicon.css'
 // import './navbar.css'; // Assuming you have some CSS for styling
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <a href="/" className="navbar-logo">
+    <nav class="container flex items-center justify-between h-16">
+      <div class="bg-red-400 absolute top-0 left-0
+      min-h-[80vh] w-full duration-500 ease-out overflow-hidden z-20">
+        
+        <a href="/" class="navbar-logo">
           Logo
         </a>
-        <ul className="navbar-menu">
-          <li className="navbar-item">
-            <a href="/home" className="navbar-links">
+        <ul class="flex flex-col items-center gap-8 pt-20">
+          <li>
+            <a href="/home" class="nav-link active">
               Home
             </a>
           </li>
-          <li className="navbar-item">
-            <a href="/about" className="navbar-links">
+          <li>
+            <a href="/about" class="nav-link">
               About
             </a>
           </li>
-          <li className="navbar-item">
-            <a href="/services" className="navbar-links">
+          <li>
+            <a href="/services" class="nav-link">
               Services
             </a>
           </li>
-          <li className="navbar-item">
-            <a href="/contact" className="navbar-links">
+          <li>
+            <a href="/contact" class="nav-link">
               Contact
             </a>
           </li>
         </ul>
+
+        <div class="text-xl cursor-pointer">
+          <i class="ri-arrow-right-down-line"></i>
+        </div>
+
+        <div>
+          <i></i>
+          <i></i>
+          <div>
+            <i></i>
+          </div>
+          <div>
+            <i></i>
+          </div>
+        </div>
+
       </div>
     </nav>
   )
